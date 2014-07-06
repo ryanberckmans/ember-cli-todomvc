@@ -42,5 +42,9 @@ export default Ember.ArrayController.extend({
 
   completed: function() {
     return this.filterBy('isCompleted', true).get('length');
+  }.property('@each.isCompleted'),
+
+  allAreDone: function(key, value) { // Not sure why this propery needs function(key, value) instead of just functino(). It doesn't work without function(key,value).
+    return !!this.get('length') && this.isEvery('isCompleted');
   }.property('@each.isCompleted')
 });
