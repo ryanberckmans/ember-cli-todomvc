@@ -28,10 +28,10 @@ This project implements Ember's [Getting Started](http://emberjs.com/guides/gett
 Added coffeescript (which doesn't ship with ember-cli) and converted most app/*.js files to .coffee.
 
 1. `npm install --save-dev broccoli-coffee`
-2. convert .js file -> .coffee
-3. in a .coffee file, be sure to wrap ES6 module notation in backticks. Example from ember-cli webpage:
+2. convert .js file to .coffee
+3. in a .coffee file, wrap ES6 module notation in backticks. Example from ember-cli webpage:
 
-```
+```coffee
 # app/models/post.coffee
 `import User from 'appkit/models/user'`
 
