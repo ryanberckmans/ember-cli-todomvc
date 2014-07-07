@@ -22,3 +22,22 @@ This project implements Ember's [Getting Started](http://emberjs.com/guides/gett
 1. ember-cli doesn't ship with local storage adapter (as of version 0.0.39)
 2. [add ember-localstorage-adapter to your project](http://stackoverflow.com/questions/24327090/how-to-import-module-ember-localstorage-adapter-with-ember-cli), ie DS.LSAdapter
 3. restart `ember server` or it won't pick up the new dependency in Brocfile.js
+
+### CoffeeScript 
+
+Added coffeescript (which doesn't ship with ember-cli) and converted most app/*.js files to .coffee.
+
+1. `npm install --save-dev broccoli-coffee`
+2. convert .js file -> .coffee
+3. in a .coffee file, be sure to wrap ES6 module notation in backticks. Example from ember-cli webpage:
+
+```
+# app/models/post.coffee
+`import User from 'appkit/models/user'`
+
+Post = Em.Object.extend
+  init: (userId) ->
+    @set 'user', User.findById(userId)
+ 
+`export default Post`
+```
