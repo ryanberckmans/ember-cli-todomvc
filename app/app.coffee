@@ -8,6 +8,6 @@ App = Ember.Application.extend
   modulePrefix: 'todos'
   Resolver: Resolver
 
-loadInitializers(App, 'todos')
+loadInitializers App, 'todos'
 
 `export default App`
