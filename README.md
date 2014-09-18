@@ -8,7 +8,6 @@ This project implements Ember's [Getting Started](http://emberjs.com/guides/gett
 
 * Using ember-cli 0.0.46
 * `ember test` and `tests/*` are outdated and will not work for this project
-* TEMPORARY - in `bower.json`, dependency `emberfire` is set to `ryanberckmans/emberfire#master` - as of this writing, emberfire's releases were broken and a fork fixed this. Tracked in issue #3
 
 ### Quick Start
 
