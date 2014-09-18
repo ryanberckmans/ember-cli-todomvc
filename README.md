@@ -4,12 +4,18 @@
 This project implements Ember's [Getting Started](http://emberjs.com/guides/getting-started/) guide with [ember-cli](http://iamstef.net/ember-cli/).
 
 
+### ember-cli version
+
+* Using ember-cli 0.0.46
+* `ember test` and `tests/*` are outdated and will not work for this project
+* TEMPORARY - in `bower.json`, dependency `emberfire` is set to `ryanberckmans/emberfire#master` - as of this writing, emberfire's releases were broken and a fork fixed this. Tracked in issue #3
+
 ### Quick Start
 
 0. install [ember-cli](http://iamstef.net/ember-cli/)
 1. `git clone git@github.com:ryanberckmans/ember-cli-todomvc.git`
 2. `cd ember-cli-todomvc && npm install && bower install`
-3. edit `config/environment.coffee` line 14, and set `firebase_instance` to your Firebase instance.
+3. edit `config/environment.js` line 5, and set `firebase_instance` to your Firebase instance.
 4. Alternatively, to use browser localstorage instead of setting `firebase_instance`, edit `app/adapters/application.coffee`, uncomment the localstorage adapter (lines 7 and 8) and comment the firebase adapter (lines 11 and 12)
 5. `ember serve`
 6. navigate to http://localhost:4200
