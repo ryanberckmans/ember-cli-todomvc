@@ -1,4 +1,5 @@
 `import Ember from 'ember'`
+`import config from './config/environment'`
 `import Resolver from 'ember/resolver'`
 `import loadInitializers from 'ember/load-initializers'`
 

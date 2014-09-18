@@ -1,4 +1,5 @@
 `import DS from 'ember-data'`
+`import ENV from '../config/environment'`
 
 # Uncomment next line to enable fixtures
 # adapter = DS.FixtureAdapter.extend()
@@ -9,6 +10,6 @@
 
 # Uncomment next lines to enable Firebase
 adapter = DS.FirebaseAdapter.extend
-  firebase: new window.Firebase 'https://' + window.TodosENV.APP.firebase_instance + '.firebaseio.com'
+  firebase: new window.Firebase 'https://' + ENV.firebase_instance + '.firebaseio.com'
 
 `export default adapter`

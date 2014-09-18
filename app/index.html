@@ -14,13 +14,12 @@
   </head>
   <body>
     <script>
-      window.TodosENV = {{ENV}};
-      window.EmberENV = window.TodosENV.EmberENV;
+      window.EmberENV = {{EMBER_ENV}};
     </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/todos.js"></script>
     <script>
-      window.Todos = require('todos/app')['default'].create(TodosENV.APP);
+      window.Todos = require('todos/app')['default'].create({{APP_CONFIG}});
     </script>
   </body>
 </html>
